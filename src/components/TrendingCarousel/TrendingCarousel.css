@@ -1,0 +1,33 @@
+.trending-carousel {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  overflow-y: hidden;
+  gap: 16px;
+  padding: 10px;
+  scrollbar-width: none; 
+  
+}
+
+.carousel-item {
+  flex: 0 0 auto;
+  width: 200px;
+  border-radius: 8px;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.3s ease;
+}
+
+.trending-carousel::-webkit-scrollbar {
+  display: none; 
+}
+
+.carousel-item:hover {
+  transform: scale(1.05);
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
