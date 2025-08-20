@@ -12,7 +12,7 @@ interface Props {
 const FeaturedSection: React.FC<Props> = ({ movie }) => {
 
     const [showVideo, setShowVideo] = useState(false);
-    const defaultVideoUrl = "https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4";
+    const defaultVideoUrl = "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WhatCarCanYouGetForAGrand.mp4";
 
     useEffect(() => {
         setShowVideo(false);
